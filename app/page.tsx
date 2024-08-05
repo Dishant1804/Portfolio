@@ -14,9 +14,7 @@ export default function Home() {
       <ScrollAnimations />
         <div className="pl-[280px]">
           <div className="flex flex-row reveal" id="home">
-            <>
               <Profile />
-            </>
             <div className="ml-[30px]">
               <HeroIntro />
               <Technologies />
