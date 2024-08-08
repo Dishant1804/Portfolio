@@ -14,7 +14,7 @@ const Profile = () => {
     <div className="w-[412px] h-[691px] bg-profile-gradiet rounded-[20px] border-0 mt-[37px] flex flex-col items-center">
       <div className="w-full h-full flex flex-col items-center">
         <Image src={profilePhoto} width={310} height={310} style={{ objectFit: 'cover' }} alt="Profile Image" className="mt-[64px] rounded-full" />
-        <h1 className="text-white text-[44px] leading-[48px] mt-[60px]">
+        <h1 className="text-white text-[44px] leading-[48px] mt-[60px] flex justify-center items-center ">
           Dishant Miyani
         </h1>
         <p className="w-[273px] mt-[36px] text-[#9f9f9f] text-xl text-center">

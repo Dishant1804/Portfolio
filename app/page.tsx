@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <ScrollAnimations />
-        <div className="pl-[280px]">
+        <div className="flex flex-col justify-center items-center">
           <div className="flex flex-row reveal" id="home">
               <Profile />
             <div className="ml-[30px]">

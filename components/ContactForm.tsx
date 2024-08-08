@@ -15,7 +15,6 @@ const ContactForm = () => {
   const [message, setMessage] = useState<string>("");
 
   const handleSubmit = async () => {
-    console.log('inside handle submit')
     try {
       const response = await fetch('/api/send-email', {
         method: 'POST',
