@@ -14,8 +14,10 @@ export default function Home() {
       <ScrollAnimations />
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-row reveal" id="home">
-              <Profile />
-            <div className="ml-[30px]">
+              <div className="hidden md:block">
+                <Profile />
+              </div>
+            <div className="ml-[30px] flex flex-col ">
               <HeroIntro />
               <Technologies />
             </div>
