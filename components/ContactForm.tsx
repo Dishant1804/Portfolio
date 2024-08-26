@@ -15,6 +15,12 @@ const ContactForm = () => {
   const [message, setMessage] = useState<string>("");
 
   const handleSubmit = async () => {
+  
+    if (!name || !email || !subject || !message) {
+      alert("Fill the required fields.");
+      return;
+    }
+  
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
@@ -23,9 +29,9 @@ const ContactForm = () => {
         },
         body: JSON.stringify({ name, email, subject, message }),
       });
-
+  
       console.log("Response status:", response.status);
-
+  
       if (response.ok) {
         alert("Message sent successfully!");
         setName("");
@@ -42,6 +48,7 @@ const ContactForm = () => {
       alert("An error occurred. Please try again.");
     }
   };
+  
 
   return (
     <div className="flex flex-col mt-[36px] h-auto p-[30px] lg:max-h-[750px] w-screen lg:w-[1394px] bg-contact-gradient rounded-[20px] ">
@@ -121,7 +128,7 @@ const ContactForm = () => {
                 <div className=" text-nowrap ">Full name</div>
                 <input
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="Your name here"
                   className="md:mr-[20px] text-[14px] w-full lg:w-[352px] bg-[#013220] h-[60px] rounded-[15px] pl-[21px] shadow-xl shadow-black focus:outline-none focus:border-none focus:ring-0"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
