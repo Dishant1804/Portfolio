@@ -12,7 +12,7 @@ const HeroIntro = () => {
   };
 
   return (
-    <div className="w-full max-w-[950px] h-auto p-[20px] sm:p-[30px] md:p-[40px] bg-heroIntro-gradient border-0 mt-[20px] sm:mt-[30px] md:mt-[37px] rounded-[10px] sm:rounded-[15px] md:rounded-[20px] flex flex-col items-start justify-center gap-[16px]">
+    <div className="w-screen max-w-[950px] h-auto p-[20px] sm:p-[30px] md:p-[40px] bg-heroIntro-gradient border-0 mt-[20px] sm:mt-[30px] md:mt-[37px] rounded-[10px] sm:rounded-[15px] md:rounded-[20px] flex flex-col items-start justify-center gap-[16px]">
       <h3 className="text-[#9F9F9F] text-[20px] sm:text-[22px] md:text-[24px] flex flex-col w-[163px] h-[28px]">
         Hello There!
       </h3>

@@ -44,15 +44,15 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col mt-[36px] h-[750px] w-full  max-w-[1394px] bg-contact-gradient rounded-[20px] ">
+    <div className="flex flex-col mt-[36px] h-auto p-[30px] lg:max-h-[750px] w-screen lg:w-[1394px] bg-contact-gradient rounded-[20px] ">
       <div className="flex justify-center w-full ">
         <h3 className="text-[20px] text-[#9c9c9c] mt-[35px] ">Contact</h3>
       </div>
-      <h1 className="flex justify-center items-center text-[40px] text-[#FFF] font-semibold ">
+      <h1 className="flex justify-center items-center text-center text-[40px] text-[#FFF] font-semibold ">
         Get In Touch With Me!
       </h1>
-      <div className="flex flex-row w-full h-[512px] gap-[20px] justify-center items-center mt-[40px]">
-        <div className="flex flex-col justify-evenly w-[350px] h-full border border-white/20 rounded-[20px] pl-[28px] shadow-xl shadow-black hidden md:block ">
+      <div className="flex flex-row w-full lg:h-[512px] gap-[20px] justify-center items-center mt-[40px]">
+        <div className="flex flex-col justify-evenly w-[350px] h-full border border-white/20 rounded-[20px] pl-[28px] shadow-xl shadow-black hidden lg:block ">
           <div className="flex flex-col gap-[5px] mt-[60px] pl-[15px]">
             <div className="flex flex-row items-center gap-[5px]">
               <Image
@@ -68,7 +68,7 @@ const ContactForm = () => {
             </div>
             <h5 className="text-[#9c9c9c] pl-[20px]">India</h5>
           </div>
-          <div className="flex flex-col mt-[40px] pl-[15px]">
+          <div className="flex flex-col mt-[80px] pl-[15px]">
             <div className="flex flex-row gap-[5px] items-center">
               <Image src={mail} height={16} width={16} alt="Mail icon" />
               <h3 className="text-[#9c9c9c] flex flex-start text-[18px] font-semibold">
@@ -79,7 +79,7 @@ const ContactForm = () => {
               dishantmiyani1804@gmail.com
             </h5>
           </div>
-          <div className="flex flex-col mt-[40px] pl-[15px] ">
+          <div className="flex flex-col mt-[80px] pl-[15px] ">
             <div className="flex flex-row gap-[5px] items-center">
               <Image src={followIcon} height={16} width={16} alt="Mail icon" />
               <h3 className="text-[#9c9c9c] flex flex-start text-[18px] font-semibold">
@@ -115,37 +115,39 @@ const ContactForm = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col w-[800px] h-full border border-white/20 rounded-[20px] pl-[28px]  shadow-xl shadow-black ">
-          <div className="mt-[25px] pl-[8px] flex flex-row text-[#9c9c9c] font-semibold">
-            <div className="mr-[292px]">Full name</div>
-            <div>Email Address</div>
-          </div>
-          <div className="mt-[7px] flex flex-row text-[#9c9c9c] font-semibold">
-            <input
-              type="text"
-              placeholder="John Doe"
-              className="mr-[20px] text-[14px] w-[352px] bg-[#013220] h-[60px] rounded-[15px] pl-[21px] shadow-xl shadow-black focus:outline-none focus:border-none focus:ring-0 "
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            ></input>
-            <input
-              type="text"
-              placeholder="example@gmail.com"
-              className="w-[352px] bg-[#013220] h-[60px] text-[14px] rounded-[15px] pl-[21px] shadow-xl shadow-black focus:outline-none focus:border-none focus:ring-0"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            ></input>
+        <div className="flex flex-col w-full lg:max-w-[800px] max-h-full h-auto border border-white/20 rounded-[20px] p-[28px] shadow-xl shadow-black ">
+          <div className="flex flex-col lg:flex-row justify-center items-center">
+            <div className="mt-[25px] w-full flex flex-col text-[#9c9c9c] font-semibold h-auto justify-center items-start">
+                <div className=" text-nowrap ">Full name</div>
+                <input
+                  type="text"
+                  placeholder="John Doe"
+                  className="md:mr-[20px] text-[14px] w-full lg:w-[352px] bg-[#013220] h-[60px] rounded-[15px] pl-[21px] shadow-xl shadow-black focus:outline-none focus:border-none focus:ring-0"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                ></input>
+              </div>
+            <div className="mt-[25px] w-full flex flex-col text-[#9c9c9c] font-semibold">
+              <div className="text-nowrap">Email Address</div>
+              <input
+                type="text"
+                placeholder="example@gmail.com"
+                className="md:mr-[20px] text-[14px] w-full lg:w-[352px] bg-[#013220] h-[60px] rounded-[15px] pl-[21px] shadow-xl shadow-black focus:outline-none focus:border-none focus:ring-0"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              ></input>
+            </div>
           </div>
           <div className="mt-[20px] pl-[8px] flex flex-row text-[#9c9c9c] font-semibold">
             <div className="mr-[292px]">Subject</div>
           </div>
-          <div className="mt-[7px] flex flex-row text-[#9c9c9c] font-semibold">
+          <div className="mt-[7px] flex flex-row text-[#9c9c9c] font-semibold justify-center items-center">
             <input
               type="text"
               placeholder="Write Your Message"
-              className="text-[14px] w-[728px] bg-[#013220] h-[60px] rounded-[15px] pl-[21px] shadow-xl shadow-black focus:outline-none focus:border-none focus:ring-0"
+              className="text-[14px] w-full lg:max-w-[728px] bg-[#013220] h-[60px] rounded-[15px] pl-[21px] shadow-xl shadow-black focus:outline-none focus:border-none focus:ring-0"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               required
@@ -154,11 +156,11 @@ const ContactForm = () => {
           <div className="mt-[20px] pl-[8px] flex flex-row text-[#9c9c9c] font-semibold">
             <div className="mr-[292px]">Message</div>
           </div>
-          <div className="mt-2 flex flex-row text-[#9c9c9c] font-semibold">
+          <div className="mt-2 flex flex-row text-[#9c9c9c] font-semibold justify-center items-center">
             <textarea
               placeholder="Write Your Message"
               maxLength={260}
-              className=" p-[20px] text-[14px] w-[728px] bg-[#013220] h-32 rounded-[15px] resize-none shadow-xl shadow-black focus:outline-none focus:border-none focus:ring-0"
+              className=" p-[20px] text-[14px] w-full lg:max-w-[728px] bg-[#013220] h-32 rounded-[15px] resize-none shadow-xl shadow-black focus:outline-none focus:border-none focus:ring-0"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required

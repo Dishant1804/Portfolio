@@ -1,8 +1,8 @@
 
 const Technologies = () => {
-  return <div className="w-[950px] h-[258px] rounded-[20px] mt-[30px] bg-technology-gradient p-[30px] ">
+  return <div className="max-w-[950px] w-screen h-[258px] rounded-[20px] mt-[30px] bg-technology-gradient p-[30px] overflow-hidden ">
     <h2 className="flex w-[361px] h-[27px] flex-col text-[#FFF] text-[24px]">Technologies & Tools</h2>
-    <div className="w-[900px] mt-[24px] text-[17px] leading-relaxed overflow-hidden">
+    <div className="w-[1300px] lg:w-[900px] mt-[24px] text-[13px] lg:text-[17px] leading-relaxed overflow-hidden">
       <ul className="text-[#9f9f9f] flex gap-[35px] w-full flex-wrap justify-center">
         <div className="relative flex gap-[35px] animate-loop-scroll-front w-full">
           <li className="gap-[5px] flex justify-center items-center">

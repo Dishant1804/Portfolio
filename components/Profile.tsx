@@ -11,16 +11,16 @@ const Profile = () => {
   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
 
   return (
-    <div className="w-[412px] h-[691px] bg-profile-gradiet rounded-[20px] border-0 mt-[37px] flex flex-col items-center">
-      <div className="w-full h-full flex flex-col items-center">
+    <div className="lg:max-w-[412px] w-screen h-[691px] bg-profile-gradiet rounded-[20px] border-0 mt-[37px] flex flex-col items-center mx-[20px] lg:mx-0 ">
+      <div className="flex flex-col items-center">
         <Image src={profilePhoto} width={310} height={310} style={{ objectFit: 'cover' }} alt="Profile Image" className="mt-[64px] rounded-full" />
         <h1 className="text-white text-[44px] leading-[48px] mt-[60px] flex justify-center items-center ">
           Dishant Miyani
         </h1>
-        <p className="w-[273px] mt-[36px] text-[#9f9f9f] text-xl text-center">
+        <p className="lg:max-w-[273px] mt-[36px] text-[#9f9f9f] text-xl text-center px-[20px] lg:px-0">
           I am a Full Stack Web Developer &amp; AI/ML Engineer based in India.
         </p>
-        <ul className="flex justify-center gap-[30px] mt-[20px]">
+        <ul className="flex justify-center gap-[30px] mt-[20px] w-screen ">
           <li className="tooltip" data-tooltip="Let's connect">
             <Link href="https://www.linkedin.com/in/dishantmiyani/" target="_blank" rel="noopener noreferrer">
               <Image src={linkedinIcon} height={35} width={35} alt="LinkedIn" className="opacity-80" />
