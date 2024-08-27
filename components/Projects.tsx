@@ -11,7 +11,7 @@ const Projects = () => {
       </h1>
       <div className="w-full pt-[35px] flex justify-center items-center">
         <div className="w-[90%] lg:w-[590px] flex flex-col flex-wrap leading-relaxed justify-center items-center text-[#9f9f9f] text-[16px] text-center">
-        Check out some of my projects,crafted with love and dedication, each one reflecting the passion and soul I poured into every detail.
+          Check out some of my projects,crafted with love and dedication, each one reflecting the passion and soul I poured into every detail.
         </div>
       </div>
       <div className="w-full flex flex-col lg:flex-row justify-center mt-[20px] items-center lg:px-[30px]">
