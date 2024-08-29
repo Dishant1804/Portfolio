@@ -52,14 +52,14 @@ const ContactForm = () => {
 
   return (
     <div className="flex flex-col mt-[36px] h-auto p-[30px] lg:max-h-[750px] w-screen lg:w-[1394px] bg-contact-gradient rounded-[20px] ">
-      <div className="flex justify-center w-full ">
-        <h3 className="text-[20px] text-[#9c9c9c] mt-[35px] ">Contact</h3>
+      <div className="flex justify-center w-full mt-[20px] ">
+        <h3 className="text-[20px] text-[#9c9c9c]">Contact</h3>
       </div>
       <h1 className="flex justify-center items-center text-center text-[40px] text-[#FFF] font-semibold ">
         Get In Touch With Me!
       </h1>
-      <div className="flex flex-row w-full lg:h-[512px] gap-[20px] justify-center items-center mt-[40px]">
-        <div className="flex flex-col justify-evenly w-[350px] h-full border border-white/20 rounded-[20px] pl-[28px] shadow-xl shadow-black hidden lg:block ">
+      <div className="flex flex-row w-full lg:h-[532px] gap-[20px] justify-center items-center mt-[30px]">
+        <div className="flex flex-col justify-evenly w-[350px] h-[532px] border border-white/20 rounded-[20px] pl-[28px] shadow-xl shadow-black hidden lg:block ">
           <div className="flex flex-col gap-[5px] mt-[60px] pl-[15px]">
             <div className="flex flex-row items-center gap-[5px]">
               <Image
@@ -122,7 +122,7 @@ const ContactForm = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col w-full lg:max-w-[800px] max-h-full h-auto border border-white/20 rounded-[20px] p-[28px] shadow-xl shadow-black ">
+        <div className="flex flex-col w-full lg:max-w-[800px] h-auto border border-white/20 rounded-[20px] p-[28px] shadow-xl shadow-black ">
           <div className="flex flex-col lg:flex-row justify-center items-center">
             <div className="mt-[25px] w-full flex flex-col text-[#9c9c9c] font-semibold h-auto justify-center items-start">
                 <div className=" text-nowrap ">Full name</div>
