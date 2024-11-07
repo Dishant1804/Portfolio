@@ -22,7 +22,28 @@ const ExperienceAndEducation = () => {
                 </div>
                 <div className="pl-[20px] w-auto">
                   <div className="pt-[30px] flex flex-row whitespace-nowrap text-[#9f9f9f] text-[14px] md:text-[16px]">
-                    Jun&nbsp;2024&nbsp;&#45;&nbsp;present
+                    Aug&nbsp;2024&nbsp;&#45;&nbsp;present
+                  </div>
+                  <h2 className="mt-[12px] lg:h-[22px] text-[#CCC] text-[20px] md:text-[24px] font-semibold">
+                    Freelancer
+                  </h2>
+                  <h3 className="mt-[16px] lg:h-[30px] text-[14px] md:text-[16px] pb-[31.3px] text-[#77777D]">
+                    Full Stack Web Developer
+                  </h3>
+                </div>
+              </div>
+              <div className="w-full h-auto md:h-[161px] flex flex-row items-center border-b-2 border-[#77777D]/20">
+                <div>
+                  <Image
+                    src={BookIcon}
+                    alt="Book icon"
+                    width={50}
+                    height={50}
+                  />
+                </div>
+                <div className="pl-[20px] w-auto">
+                  <div className="pt-[30px] flex flex-row whitespace-nowrap text-[#9f9f9f] text-[14px] md:text-[16px]">
+                    Jun&nbsp;2024&nbsp;&#45;&nbsp;Aug 2024
                   </div>
                   <h2 className="mt-[12px] lg:h-[22px] text-[#CCC] text-[20px] md:text-[24px] font-semibold">
                     Disbound
@@ -43,28 +64,7 @@ const ExperienceAndEducation = () => {
                 </div>
                 <div className="pl-[20px] w-auto">
                   <div className="pt-[30px] flex flex-row whitespace-nowrap text-[#9f9f9f] text-[14px] md:text-[16px]">
-                    May&nbsp;2024&nbsp;&#45;&nbsp;Jul 2024
-                  </div>
-                  <h2 className="mt-[12px] lg:h-[22px] text-[#CCC] text-[20px] md:text-[24px] font-semibold">
-                    GirlScript
-                  </h2>
-                  <h3 className="mt-[16px] lg:h-[30px] text-[14px] md:text-[16px] pb-[31.3px] text-[#77777D]">
-                    OpenSource Contibutor
-                  </h3>
-                </div>
-              </div>
-              <div className="w-full h-auto md:h-[161px] flex flex-row items-center border-b-2 border-[#77777D]/20">
-                <div>
-                  <Image
-                    src={BookIcon}
-                    alt="Book icon"
-                    width={50}
-                    height={50}
-                  />
-                </div>
-                <div className="pl-[20px] w-auto">
-                  <div className="pt-[30px] flex flex-row whitespace-nowrap text-[#9f9f9f] text-[14px] md:text-[16px]">
-                    May&nbsp;2023&nbsp;&#45;&nbsp;Jul 2023
+                    May&nbsp;2023&nbsp;&#45;&nbsp;Jul 2024
                   </div>
                   <h2 className="mt-[12px] lg:h-[22px] text-[#CCC] text-[20px] md:text-[24px] font-semibold">
                     GirlScript
