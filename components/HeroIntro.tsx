@@ -6,7 +6,7 @@ import DownloadIcon from "../Utils/download.svg";
 const HeroIntro = () => {
   const handleDownloadCV = () => {
     window.open(
-      "https://drive.google.com/file/d/1VRcelm4VnXxqUYwDARYMagcFHdrTRWm4/view?usp=sharing",
+      "https://drive.google.com/file/d/1O0e5CqE8aafFIJbQbaX2Fu2VTRxQG7dd/view?usp=drive_link",
       "_blank",
     );
   };
